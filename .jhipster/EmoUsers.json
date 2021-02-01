@@ -1,0 +1,41 @@
+{
+  "name": "EmoUsers",
+  "fields": [
+    {
+      "fieldName": "nameAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "emoMessages",
+      "otherEntityRelationshipName": "emoUsers",
+      "relationshipName": "emoUsersMessages"
+    }
+  ],
+  "changelogDate": "20210201141339",
+  "javadoc": "EmoUsers (emo_users) entity.\\n@author Ibrahim Hassanin.",
+  "entityTableName": "emo_users",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

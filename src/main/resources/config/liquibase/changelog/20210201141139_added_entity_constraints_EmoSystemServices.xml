@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity EmoSystemServices.
+    -->
+    <changeSet id="20210201141139-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="emo_system_id"
+                                 baseTableName="emo_system_services"
+                                 constraintName="fk_emo_system_services_emo_system_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="emo_system"/>
+
+    </changeSet>
+</databaseChangeLog>

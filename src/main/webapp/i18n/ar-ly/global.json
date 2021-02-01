@@ -7,6 +7,12 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "الكيانات",
+        "emoSystem": "Emo System",
+        "emoSystemServices": "Emo System Services",
+        "emoCenter": "Emo Center",
+        "emoUsers": "Emo Users",
+        "emoMessages": "Emo Messages",
+        "emoMessageFeedback": "Emo Message Feedback",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

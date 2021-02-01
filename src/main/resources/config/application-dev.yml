@@ -37,9 +37,12 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/emotionFeedback
-    username: emotionFeedback
-    password:
+    #    url: jdbc:postgresql://localhost:5432/emotionFeedback
+    #    username: emotionFeedback
+    #    password:
+    url: jdbc:postgresql://localhost:5432/lastdemo_stg_12_01_2021?currentSchema=emotion_feedback
+    username: postgres
+    password: admin
     hikari:
       poolName: Hikari
       auto-commit: false

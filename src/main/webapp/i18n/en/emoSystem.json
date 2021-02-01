@@ -1,0 +1,27 @@
+{
+  "emotionFeedbackApp": {
+    "emoSystem": {
+      "home": {
+        "title": "Emo Systems",
+        "createLabel": "Create a new Emo System",
+        "createOrEditLabel": "Create or edit a Emo System",
+        "notFound": "No Emo Systems found"
+      },
+      "created": "A new Emo System is created with identifier {{ param }}",
+      "updated": "A Emo System is updated with identifier {{ param }}",
+      "deleted": "A Emo System is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Emo System {{ id }}?"
+      },
+      "detail": {
+        "title": "Emo System"
+      },
+      "nameAr": "Name Ar",
+      "nameEn": "Name En",
+      "code": "Code",
+      "status": "Status",
+      "emoSystemMessages": "Emo System Messages",
+      "emoSystemServices": "Emo System Services"
+    }
+  }
+}

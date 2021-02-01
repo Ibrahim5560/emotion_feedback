@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity EmoMessages.
+    -->
+    <changeSet id="20210201141439-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="emo_center_id"
+                                 baseTableName="emo_messages"
+                                 constraintName="fk_emo_messages_emo_center_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="emo_center"/>
+
+        <addForeignKeyConstraint baseColumnNames="emo_system_id"
+                                 baseTableName="emo_messages"
+                                 constraintName="fk_emo_messages_emo_system_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="emo_system"/>
+
+        <addForeignKeyConstraint baseColumnNames="emo_system_services_id"
+                                 baseTableName="emo_messages"
+                                 constraintName="fk_emo_messages_emo_system_services_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="emo_system_services"/>
+
+        <addForeignKeyConstraint baseColumnNames="emo_users_id"
+                                 baseTableName="emo_messages"
+                                 constraintName="fk_emo_messages_emo_users_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="emo_users"/>
+
+    </changeSet>
+</databaseChangeLog>

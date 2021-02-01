@@ -1,0 +1,83 @@
+/**
+ * EmoSystem (emo_system) entity.
+ * @author Ibrahim Hassanin.
+ */
+entity EmoSystem {
+	nameAr String
+	nameEn String
+	code String
+	status Integer	
+}
+/**
+ * EmoSystemServices (emo_system_services) entity.
+ * @author Ibrahim Hassanin.
+ */
+entity EmoSystemServices {
+	nameAr String
+	nameEn String
+	code String
+	status Integer		
+}
+/**
+ * EmoCenter (emo_center) entity.
+ * @author Ibrahim Hassanin.
+ */
+entity EmoCenter {
+	nameAr String
+	nameEn String
+	code String
+	status Integer	
+}
+/**
+ * EmoUsers (emo_users) entity.
+ * @author Ibrahim Hassanin.
+ */
+entity EmoUsers {
+	nameAr String
+	nameEn String
+	code String
+	status Integer	
+}
+/**
+ * EmoMessages (emo_messages) entity.
+ * @author Ibrahim Hassanin.
+ */
+entity EmoMessages {
+	counter Long
+	trsId Long
+	userId Long
+	message String
+	status Integer		
+	applicantName String
+}
+/**
+ * EmoMessageFeedback (emo_message_feedback) entity.
+ * @author Ibrahim Hassanin.
+ */
+entity EmoMessageFeedback {
+	emoSystemId Long
+	centerId Long
+	emoSystemServicesId Long
+	counter Long
+	trsId Long
+	userId Long
+	message String
+	status Integer		
+	feedback String
+	applicantName String
+}
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	EmoCenter {emoCenterMessages} to EmoMessages
+	EmoSystem {emoSystemMessages} to EmoMessages
+	EmoSystemServices {emoSystemServicesMessages} to EmoMessages
+    EmoSystem {emoSystemServices} to EmoSystemServices
+	EmoUsers {emoUsersMessages} to EmoMessages
+}
+// Set pagination options
+paginate * with pagination
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+// Set service options 
+service all with serviceImpl
+filter all

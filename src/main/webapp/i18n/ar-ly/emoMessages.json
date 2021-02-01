@@ -1,0 +1,31 @@
+{
+  "emotionFeedbackApp": {
+    "emoMessages": {
+      "home": {
+        "title": "Emo Messages",
+        "createLabel": "Create a new Emo Messages",
+        "createOrEditLabel": "Create or edit a Emo Messages",
+        "notFound": "No Emo Messages found"
+      },
+      "created": "A new Emo Messages is created with identifier {{ param }}",
+      "updated": "A Emo Messages is updated with identifier {{ param }}",
+      "deleted": "A Emo Messages is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Emo Messages {{ id }}?"
+      },
+      "detail": {
+        "title": "Emo Messages"
+      },
+      "counter": "Counter",
+      "trsId": "Trs Id",
+      "userId": "User Id",
+      "message": "Message",
+      "status": "Status",
+      "applicantName": "Applicant Name",
+      "emoCenter": "Emo Center",
+      "emoSystem": "Emo System",
+      "emoSystemServices": "Emo System Services",
+      "emoUsers": "Emo Users"
+    }
+  }
+}

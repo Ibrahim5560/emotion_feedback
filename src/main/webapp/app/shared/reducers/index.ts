@@ -12,6 +12,30 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import emoSystem, {
+  EmoSystemState
+} from 'app/entities/emo-system/emo-system.reducer';
+// prettier-ignore
+import emoSystemServices, {
+  EmoSystemServicesState
+} from 'app/entities/emo-system-services/emo-system-services.reducer';
+// prettier-ignore
+import emoCenter, {
+  EmoCenterState
+} from 'app/entities/emo-center/emo-center.reducer';
+// prettier-ignore
+import emoUsers, {
+  EmoUsersState
+} from 'app/entities/emo-users/emo-users.reducer';
+// prettier-ignore
+import emoMessages, {
+  EmoMessagesState
+} from 'app/entities/emo-messages/emo-messages.reducer';
+// prettier-ignore
+import emoMessageFeedback, {
+  EmoMessageFeedbackState
+} from 'app/entities/emo-message-feedback/emo-message-feedback.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -25,6 +49,12 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly emoSystem: EmoSystemState;
+  readonly emoSystemServices: EmoSystemServicesState;
+  readonly emoCenter: EmoCenterState;
+  readonly emoUsers: EmoUsersState;
+  readonly emoMessages: EmoMessagesState;
+  readonly emoMessageFeedback: EmoMessageFeedbackState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -40,6 +70,12 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  emoSystem,
+  emoSystemServices,
+  emoCenter,
+  emoUsers,
+  emoMessages,
+  emoMessageFeedback,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 });
